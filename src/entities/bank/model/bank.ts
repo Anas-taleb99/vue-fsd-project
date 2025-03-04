@@ -3,4 +3,6 @@ export interface BankModel {
   status: 'pending' | 'approved' | 'rejected'
   name: string
   city: string
+  code: string
+  address: string
 }

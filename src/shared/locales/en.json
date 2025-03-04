@@ -5,5 +5,7 @@
   "inbox": "Inbox",
   "calendar": "Calendar",
   "search": "Search",
-  "settings": "Settings"
+  "settings": "Settings",
+  "new": "New",
+  "save": "Save"
 }

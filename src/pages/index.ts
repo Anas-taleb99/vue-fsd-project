@@ -14,6 +14,11 @@ export const routes = [
         name: 'bank',
         component: () => import('./dashboard/Bank/BankView.vue'),
       },
+      {
+        path: 'banks/create',
+        name: 'bank-create',
+        component: () => import('./dashboard/Bank/Create/CreateBank.vue'),
+      },
     ],
   },
 ]

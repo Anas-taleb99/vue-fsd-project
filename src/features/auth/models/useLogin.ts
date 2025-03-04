@@ -14,14 +14,8 @@ export function useLogin() {
 
   const onSubmit = form.handleSubmit(async (values) => {
     isSubmitting.value = true
-    try {
-      console.log('Logging in...', values)
-      // Call API here
-    } catch (error) {
-      console.error('Login failed', error)
-    } finally {
-      isSubmitting.value = false
-    }
+    console.log('Logging in...', values)
+    // Call API here
   })
 
   return {
