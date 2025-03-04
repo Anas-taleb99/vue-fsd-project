@@ -46,8 +46,10 @@ const items = [
 </script>
 
 <template>
-  <Sidebar>
+  <Sidebar class="shadow-lg">
     <SidebarContent>
+      <h4 class="p-4 text-3xl">LOGO</h4>
+      <hr />
       <SidebarGroup>
         <SidebarGroupLabel>
           <h4>Application</h4>
