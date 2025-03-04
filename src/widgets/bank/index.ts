@@ -1,0 +1,1 @@
+export { default as BankTable } from './ui/BankTable.vue'

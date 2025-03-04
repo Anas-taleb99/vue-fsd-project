@@ -7,8 +7,8 @@ const { locale } = useI18n()
 
 <template>
   <div :class="locale">
-    <button class="p-4 bg-red-500 text-white" @click="locale = 'en'">English</button>
-    <button class="p-4 bg-red-500 text-white" @click="locale = 'ar'">Arabic</button>
+    <!-- <button class="p-4 bg-red-500 text-white" @click="locale = 'en'">English</button> -->
+    <!-- <button class="p-4 bg-red-500 text-white" @click="locale = 'ar'">Arabic</button> -->
     <RouterView />
   </div>
 </template>

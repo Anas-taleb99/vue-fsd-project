@@ -1,4 +1,9 @@
 {
   "hello": "Hello",
-  "world": "World"
+  "world": "World",
+  "banks": "Banks",
+  "inbox": "Inbox",
+  "calendar": "Calendar",
+  "search": "Search",
+  "settings": "Settings"
 }

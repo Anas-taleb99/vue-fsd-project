@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: ['class'],
-    content: ['./index.html', './src/**/*.{ts,js,vue}'],
+  darkMode: ['class'],
+  content: ['./index.html', './src/**/*.{ts,js,vue}'],
   theme: {
   	extend: {
   		borderRadius: {
@@ -21,6 +21,16 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
+  				'50': 'hsl(215, 98%, 95%)',
+  				'100': 'hsl(215, 98%, 85%)',
+  				'200': 'hsl(215, 98%, 75%)',
+  				'300': 'hsl(215, 98%, 65%)',
+  				'400': 'hsl(215, 98%, 55%)',
+  				'500': 'hsl(215, 98%, 47%)',
+  				'600': 'hsl(215, 98%, 40%)',
+  				'700': 'hsl(215, 98%, 35%)',
+  				'800': 'hsl(215, 98%, 30%)',
+  				'900': 'hsl(215, 98%, 25%)',
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
@@ -49,9 +59,19 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			sidebar: {
+  				DEFAULT: 'hsl(var(--sidebar-background))',
+  				foreground: 'hsl(var(--sidebar-foreground))',
+  				primary: 'hsl(var(--sidebar-primary))',
+  				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+  				accent: 'hsl(var(--sidebar-accent))',
+  				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+  				border: 'hsl(var(--sidebar-border))',
+  				ring: 'hsl(var(--sidebar-ring))'
   			}
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require('tailwindcss-animate')],
 }
