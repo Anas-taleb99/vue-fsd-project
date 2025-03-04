@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { SidebarTrigger } from '@/shared/ui/sidebar'
 import { ToggleLang } from '@/shared/ui/toggle-lang'
-import ToggleMode from '@/shared/ui/toggle-mode/ToggleMode.vue'
+import { ToggleMode } from '@/shared/ui/toggle-mode'
+
 </script>
 <template>
   <div class="shadow-sm w-full bg-white dark:bg-gray-900">
