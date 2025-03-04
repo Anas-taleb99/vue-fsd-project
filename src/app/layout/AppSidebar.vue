@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-vue-next"
+import { Calendar, Home, Inbox, Search, Settings } from 'lucide-vue-next'
 import {
   Sidebar,
   SidebarContent,
@@ -9,47 +9,49 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/shared/ui/sidebar"
-import { useI18n } from "vue-i18n";
-import { RouterLink } from "vue-router";
+} from '@/shared/ui/sidebar'
+import { useI18n } from 'vue-i18n'
+import { RouterLink } from 'vue-router'
 
 const { t } = useI18n()
 
 // Menu items.
 const items = [
   {
-    title: "banks",
-    url: "/banks",
+    title: 'banks',
+    url: '/banks',
     icon: Home,
   },
   {
-    title: "inbox",
-    url: "#",
+    title: 'inbox',
+    url: '#',
     icon: Inbox,
   },
   {
-    title: "calendar",
-    url: "#",
+    title: 'calendar',
+    url: '#',
     icon: Calendar,
   },
   {
-    title: "search",
-    url: "#",
+    title: 'search',
+    url: '#',
     icon: Search,
   },
   {
-    title: "settings",
-    url: "#",
+    title: 'settings',
+    url: '#',
     icon: Settings,
   },
-];
+]
 </script>
 
 <template>
   <Sidebar>
     <SidebarContent>
       <SidebarGroup>
-        <SidebarGroupLabel>Application</SidebarGroupLabel>
+        <SidebarGroupLabel>
+          <h4>Application</h4>
+        </SidebarGroupLabel>
         <SidebarGroupContent>
           <SidebarMenu>
             <SidebarMenuItem v-for="item in items" :key="item.title">
